@@ -1,0 +1,484 @@
+/* allgemein Gestaltung  */
+:root {
+    --mainColor:#00c7fc;
+    --überschriftSection:#0539a1;
+    --sekundaerColor:#f39200;
+    --dritteColor:#3d3d3d;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+ /* albert-sans-regular - latin */
+@font-face {
+    
+    font-family: 'roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-condensed-v25-latin-regular.woff'); }
+html{
+    font-size: 16px;
+    font-family: "roboto";
+    user-select: none;
+}
+body{
+    background-color: #eee;
+    
+    color: var(--dritteColor)
+
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+ul{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+label{
+    cursor: pointer;
+}
+section{
+    padding: 1rem;
+}
+h1{
+    font-size:2.5rem ; 
+    margin-bottom: 1rem ;
+    font-weight: bold;
+ }
+
+h2{
+   font-size:1.5rem ;
+   margin-bottom: 0.7rem ; 
+   font-weight: bold;
+}
+h3{
+    font-size:1.5rem ; 
+    margin-bottom: 0.5rem ; 
+ }
+
+/* Button Mehr Info Gestaltung */
+
+ a.mehrBtn{
+    display: inline-block;
+    background-color: var(--sekundaerColor);
+    color: #fff;
+    padding: 0.2rem 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    
+}
+a.mehrBtn:hover{
+    background-color: #f3920087;
+}
+
+
+
+
+/*-------------------------
+    Header Gestaltung
+---------------------------  */
+.wrapper{
+    margin: auto;
+}
+header {
+    background-color: #fff;
+    margin-bottom: 1rem;
+    height: auto;
+    position: relative;
+}
+header figure#logo{
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    width: 70px;
+}
+header .hero figure img{
+    max-width: 100%;
+}
+/* Hamburger Button Gestaltung */
+
+header div#hamburger{
+	position: absolute;
+	 width: 40px;
+	height: 40px;
+	top: 1rem;
+	right: 0.5rem;
+    text-align: center
+}
+header div#hamburger a#open::before{
+	content: "\02630";
+	color:var(--mainColor);
+	font-size: 40px;
+}
+header div#hamburger a#close::before{
+	content: "\02637";
+	color:var(--mainColor);
+	font-size: 40px;
+}
+header div#hamburger a#close{
+	display: none
+		
+}
+#menu:target a#close {
+	display: block
+	
+}
+ #menu:target a#open{
+	display: none;
+}
+
+
+/* Navigation Gestaltung */
+
+header nav#hauptNav{
+	height: 100vh;
+    width: 35%;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    right:-40%;
+    top:82px;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+#menu:target nav#hauptNav{
+    right:0;
+    z-index: 100;
+}
+header nav#hauptNav ul li{
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid var(--sekundaerColor) ;
+   
+}
+header nav#hauptNav ul li a {
+    color: #fff;
+}
+header nav#hauptNav ul li a.active{
+    color: var(--mainColor);
+}
+header nav#hauptNav ul li a:hover
+{
+    color: var(--mainColor);
+}
+header nav#hauptNav ul li ul{
+    display: none;
+}
+header nav#hauptNav ul li#bildergalerieListe:hover ul{
+   
+    padding: 0.5rem 0 0 1rem;
+    display: block;
+}
+header nav#hauptNav ul li#bildergalerieListe:hover{
+    border-bottom: none ;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+header nav#hauptNav ul li#bildergalerieListe ul li{
+    margin-bottom: 0;
+    border-bottom: none ;
+    border-top: 2px solid var(--sekundaerColor) ;
+}
+header nav#hauptNav ul li#bildergalerieListe ul li:last-child{
+    border-bottom:2px solid var(--sekundaerColor) ;
+}
+
+
+/* Hero Bild Gestaltung */
+
+header div.hero{
+    width: 100%;
+    height: 400px;
+    border-top:0.2rem solid #666  ;
+    border-bottom:0.2rem solid #666  ;
+    outline:5px 5px inset;
+    background-image:url("../images/0005_mensch.jpg") ;
+    background-image:url("../images/sl-bild06-fo-me.jpg");
+    background-image:url("../images/Bildgalerie/hero.jpg");
+    background-position: right top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+
+header div.hero div{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+header div.hero div h1 {
+    position: absolute;
+    background-color:var(--dritteColor);
+    color: #fff;
+    padding:0.5rem 1rem 1.5rem 2rem;
+   margin: 0;
+     top:50%;
+    left:0;
+    transform: translateY(-50%); 
+    z-index: 2;
+    text-align: center;
+   
+
+}
+header div.hero div h1 span{
+    display: inline-block;
+    font-size: 1.3rem;
+    color: var(--sekundaerColor);
+    /* color: var(--mainColor); */
+    text-shadow: 0px 0px 1px #000;
+    
+}
+header div.hero div#overlay1{
+    
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top:  0;
+    right:  0;
+    background: var(--mainColor);
+    opacity: 0.35;
+    z-index: 1;
+}
+header div.hero div#overlay2{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    bottom:  0;
+    right:  0;
+    background: var(--sekundaerColor);
+    opacity: 0.35;
+    z-index: 1;
+}
+
+
+
+
+
+/*-------------------------
+    Main Gestaltung
+---------------------------  */
+
+
+main section h2{
+    color: var(--überschriftSection);
+}
+main section#person div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+main section#person figure {
+    width: 48%;
+    margin: 0.5%;
+    position: relative;
+    
+}
+main section#person figure:nth-child(3),
+main section#person figure:nth-child(6){
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+main section#person figure img{
+    display: block;
+    width: 100%;
+    position: relative;
+    
+}
+main section#person figure:after
+
+{
+    content: "eine Bild";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    text-align: center;
+    background-color: var(--mainColor);
+    color: #fff;
+    box-sizing: border-box;
+    width: 100%;
+    height: 0;
+    line-height: 2rem;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+main section#person figure:hover::after
+{
+    height: 2rem;
+    
+}
+main section#person h3{
+    color: var(--überschriftSection);
+}
+main section#person p{
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+
+/*-------------------------
+    Fototuren Gestaltung
+---------------------------  */
+
+main section#fototouren div figure{
+margin: 0 auto;
+text-align: center;
+}
+
+main section#fototouren div p{
+    margin: 0.5rem auto;
+}
+
+
+
+
+/*--------------------------
+    Bildergalerie Gestaltung
+----------------------------  */
+
+
+
+
+main section#bildergalerie div#bildContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+   
+    
+}
+main section#bildergalerie div#bildContainer div{
+    width: 24%;
+    
+    
+    
+}
+/* Ausblenden dIe Bilder und Inputs */
+
+main section#bildergalerie div#bildContainer input{
+     display: none;  
+}
+
+main section#bildergalerie div#bildContainer div.Bilder{
+   
+    width: 100%;
+    margin: 0.7rem 0;
+    display: none;
+    text-align: center;
+   
+}
+
+
+/* Einblenden dIe Bilder mit checked */
+main section#bildergalerie div#bildContainer input#tab1:checked~ #bild1,
+main section#bildergalerie div#bildContainer input#tab2:checked~ #bild2,
+main section#bildergalerie div#bildContainer input#tab3:checked~ #bild3,
+main section#bildergalerie div#bildContainer input#tab4:checked~ #bild4{
+    display: block;
+} 
+
+
+@media only screen and  (min-width:447px)
+ {
+   
+}
+
+
+
+
+
+
+
+
+/*-------------------------
+    Kontakt  Gestaltung
+---------------------------  */
+
+
+
+main section#kontakt form input,
+main section#kontakt form textarea
+{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px -2px #777;
+   
+}
+main section#kontakt form input:focus,
+main section#kontakt form textarea:focus{
+    outline: var(--mainColor) 1px solid;
+}
+main section#kontakt form label{
+    display: block;
+}
+main section#kontakt form input{
+    height: 35px;
+    margin: 0.5rem 0;
+}
+main section#kontakt form textarea{
+    margin: 0.5rem 0;
+}
+main section#kontakt form input[type="button"]{
+    background-color: var(--sekundaerColor);
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+/*-------------------------
+    Footer Gestaltung
+---------------------------  */
+
+footer {
+    height: auto;
+    background-color:var(--dritteColor);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+footer ul {
+    margin: 0 0 1rem 0;
+}
+footer ul i{
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+   
+}
+footer ul i.fa-facebook{
+    color: #1877f2;
+}
+footer ul i.fa-twitter{
+    color: #1da1f2;
+}
+footer ul i.fa-square-instagram{
+    color: #833ab4;
+}
+footer ul i.fa-linkedin{
+    color:#dd5143
+}
+
+footer p{
+   
+    font-size: 0.8rem;
+}
+

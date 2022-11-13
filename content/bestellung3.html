@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Die Webseite vom Leo Kircheisen">
+    <meta name="Keywords" content="Aufnahmen für Werbezwecke Touren mit Tipps Hobbyfotografen">
+    <meta name="autor" content="Mohamed">
+     <meta name="publisher" content="Leo Kircheisen">
+    <title>Leo Kircheisen</title>
+    
+
+
+
+    <!-- Verlinkung mit der Normalize.css und Font Awesome -->
+    <link rel="stylesheet" href="../css/normalize.css" >
+    <link rel="stylesheet" href="../css/all.css">
+    <!-- Verlinkung auf css-Datei -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bestellung.css">
+    <link rel="stylesheet" href="../css/style_530.css">
+    <link rel="stylesheet" href="../css/style_768.css">
+    <link rel="stylesheet" href="../css/style_960.css">
+
+
+    
+</head>
+
+
+
+<body >
+
+<!-- ############################
+            Wrapper
+       ############################ -->    
+
+
+    <div class="wrapper">
+
+<!-- ############################
+               Header
+       ############################ -->
+
+
+        <header id="menu">
+            <figure id="logo">
+           
+                <img src="../images/LOGO.svg" alt="lOGO" >
+            </figure>
+            <div id="hamburger">
+                <a href="#menu" id="open"></a> 
+                <a href="#" id="close"></a> 
+
+            </div>
+
+            <nav id="hauptNav">
+                <ul>
+                    <li><a href="../index.html" class="active">Home</a></li>
+                    <li><a href="person.html">Person</a></li>
+                    <li><a href="fototouren.html">Fototouren</a></li>
+                    <li id="bildergalerieListe"><a href="bildergalerie.html">Bildergalerie</a>
+                        <ul>
+                            <li><a href="mensch.html">Mensch</a></li> 
+                            <li><a href="natur.html">Natur</a></li> 
+                            <li><a href="technik.html">Technik</a></li> 
+                            <li><a href="reise.html">Reise</a></li> 
+                          </ul>
+                    </li>
+                    
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    
+                </ul>
+            </nav > 
+         
+            <div class="hero">
+                
+                <!-- <figure>
+                    
+                    
+                    <img src="images/0005_mensch.jpg" alt="ein Bild von Ozean">
+                </figure> -->
+                <div>
+                  <h1> <span> der Fotograf </span><br>
+                    Leo Kircheisen</h1> </div>
+                <div id="overlay1"></div>
+                <div id="overlay2"></div>
+
+               </div>
+               
+              
+
+
+        </header>
+
+
+<!-- ############################
+             Main
+     ############################ -->
+
+<main>
+    
+    <form action="../formularverarbeitung.php" method="post" id="bestellung">
+        <h2>Ihre Bestellung</h2>
+        <div>
+            <label for="vorname">Vorname:</label>
+            <input type="text" name="Vorname:" id="vorname">
+        </div>
+        <div>
+            <label for="nachname">Nachname:</label>
+            <input type="text" name="Nachname:" id="nachname">
+        </div>
+        <div>
+            <label for="tel">Tel Nr.</label>
+            <input type="text" name="Tel:" id="tel">
+        </div>
+        <div>
+            <label for="mail">E-mail:</label>
+            <input type="email" name="E-mail:" id="mail">
+        </div>
+        <div>
+            <label for="strasse">Straße Name:</label>
+            <input type="text" name="Strasse" id="strasse">
+        </div>
+        <div>
+            <label for="strNr.">Straße Nr.</label>
+            <input type="text" name="StrNr." id="strNr.">
+        </div>
+        <div>
+            <label for="">Stadt:</label>
+            <input type="text" name="Stadt:" id="stadt">
+        </div>
+        <div>
+            <label for="plz">PLZ:</label>
+            <input type="text" name="PLZ" id="plz">
+        </div>
+        <div>
+            <label for="datum">Bestellung Datum:</label>
+            <input type="date" name="Datum:" id="datum">
+        </div>
+        <p>Wähle Sie Bitte Ihre Bilder unten</p>
+        <div  class="Bilder">
+            <!-- Bild1 -->
+            <div>
+                <input type="checkbox" name="Bilder" id="Bild1">
+                <label for="Bild1"><img src="../images/Bildgalerie/natur/0001_natur.jpg" alt="Ein Mensch"></label>
+                <span> 25,00€</span>
+             </div>
+             <!-- Bild2 -->
+             <div>
+                <input type="checkbox" name="Bilder" id="Bild2">
+                <label for="Bild2"><img src="../images/Bildgalerie/natur/0002_natur.jpg" alt="Ein Mensch"></label>
+                <span> 35,30€</span>
+             </div>
+                 <!-- Bild3 -->
+            <div>
+                <input type="checkbox" name="Bilder" id="Bild3">
+                <label for="Bild3"><img src="../images/Bildgalerie/natur/0003_natur.jpg" alt="Ein Mensch"></label>
+                <span> 19,25€</span>
+            </div>
+                  <!-- Bild4 -->
+            <div>
+                <input type="checkbox" name="Bilder" id="Bild4">
+                <label for="Bild4"><img src="../images/Bildgalerie/natur/0004_natur.jpg" alt="Ein Mensch"></label>
+                <span> 15,39€</span>
+            </div>
+                  <!-- Bild5 -->
+            <div>
+                <input type="checkbox" name="Bilder" id="Bild5">
+                <label for="Bild5"><img src="../images/Bildgalerie/natur/0005_natur.jpg" alt="Ein Mensch"></label>
+                <span> 35,99€</span>
+            </div>
+                  <!-- Bild6 -->
+            <div>
+                <input type="checkbox" name="Bilder" id="Bild6">
+                <label for="Bild6"><img src="../images/Bildgalerie/natur/0006_natur.jpg" alt="Ein Mensch"></label>
+                <span> 40,15€</span>
+            </div>
+                  <!-- Bild7 -->
+            <div>
+                <input type="checkbox" name="Bilder" id="Bild7">
+                <label for="Bild7"><img src="../images/Bildgalerie/natur/0007_natur.jpg" alt="Ein Mensch"></label>
+                <span> 10,72€</span>
+            </div>
+                  <!-- Bild8 -->
+            <div>
+                <input type="checkbox" name="Bilder" id="Bild8">
+                <label for="Bild8"><img src="../images/Bildgalerie/natur/0008_natur.jpg" alt="Ein Mensch"></label>
+                <span> 22,48€</span>
+            </div>
+                  <!-- Bild3 -->
+            <div>
+                <input type="checkbox" name="Bilder" id="Bild9">
+                <label for="Bild9"><img src="../images/Bildgalerie/natur/0009_natur.jpg" alt="Ein Mensch"></label>
+                <span> 15,30€</span>
+            </div>
+                  <!-- Bild3 -->
+            <div>
+                <input type="checkbox" name="Bilder" id="Bild10">
+                <label for="Bild10"><img src="../images/Bildgalerie/natur/00010_natur.jpg" alt="Ein Mensch"></label>
+                <span> 19,30€</span>
+            </div>
+        </div> <!-- Div Bilder -->
+        
+        <div>
+            <input type="submit" id="Btn-send" value="Senden">
+        </div>      
+        
+
+
+
+
+    </form>
+
+
+
+</main>
+
+
+
+ <!-- ############################
+                 Footer
+       ############################ -->
+<footer>
+  <ul>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-square-instagram"></i>
+    <i class="fa-brands fa-linkedin"></i>
+
+
+  </ul>
+
+  <p>&copy; 2022 copyright by Mohamed Jbeili</p>
+
+</footer>
+
+
+</div>
+
+
+<!-- Verlinkung auf jQuery Ui-Datei -->
+<script src="js/jquery-ui.min.js"></script>
+<!-- Verlinkung auf jQuery-Datei -->
+<script src="js/jquery.js"></script>
+<!-- Verlinkung auf script-Datei -->
+    <script src="js/script.js"></script>
+
+    
+</body>
+</html>

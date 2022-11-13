@@ -1,0 +1,45 @@
+.wrapper main div#lebenslauf{
+    
+    padding: 1rem;
+}
+.wrapper main div#lebenslauf figure{
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    overflow: hidden;
+    box-shadow:0 0 9px #777;
+    
+    
+}
+
+.wrapper main div#lebenslauf figure img{
+    
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    
+}
+.wrapper main div#lebenslauf figure:hover img{
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    transform:scale(1.1) rotate(-5deg);
+    -webkit-transform:scale(1.1) rotate(-5deg);
+    -moz-transform:scale(1.1) rotate(-5deg);
+    -ms-transform:scale(1.1) rotate(-5deg);
+    -o-transform:scale(1.1) rotate(-5deg);
+}
+.wrapper main div#lebenslauf p{
+    line-height: 1.5;
+}
+.wrapper main div#lebenslauf section#vita ul{
+    margin: 1rem 0 0 1rem;
+    list-style: disc;
+
+}
+.wrapper main div#lebenslauf section#vita ul li{
+    margin-bottom: 1rem;
+}

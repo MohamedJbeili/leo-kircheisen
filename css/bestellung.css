@@ -1,0 +1,77 @@
+
+main h2{
+    margin: 2rem auto;
+    
+    color: var(--überschriftSection);
+}
+
+main form{
+    width: 80%;
+    margin: 1rem auto;
+
+}
+main form input{
+    width: 100%;
+    border: none;
+    height: 35px;
+    margin: 0.5rem 0;
+    padding-left: 1rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px -2px #777;
+}
+main form input:focus{
+    outline: var(--mainColor) 1px solid;
+}
+
+main form p{
+    margin: 0.5rem auto;
+}
+/* -----------------------
+  --------Bilder List -----
+----------------------------*/
+
+
+main form div.Bilder div {
+    display: flex;
+justify-content: space-between;
+align-items: center;
+    height: auto;
+    margin: 1rem auto;
+}
+
+main form div.Bilder div input{
+    display: inline-block;
+    width: 20px; 
+
+}
+
+main form div.Bilder div input:checked+ label img{
+    opacity: .7;
+}
+main form div.Bilder div label{
+    padding-left: 1rem;
+    text-align: left;
+}
+main form div.Bilder div img{
+    display: inline-block;
+    width: 180px;
+    text-align: center;
+   
+    
+   
+}
+main form div.Bilder div span{
+    font-size: 1.3rem;
+    display: inline-block;
+    width: fit-content; 
+    color: var(--überschriftSection);
+   
+}
+main form div input[type="submit"]{
+    background-color: var(--sekundaerColor);
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    padding-left: 0;
+    font-size: 1.2rem;
+}
